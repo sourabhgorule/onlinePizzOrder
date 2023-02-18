@@ -2,9 +2,11 @@ package com.po.model;
 
 import java.util.Date;
 
+import javax.validation.constraints.NotNull;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import jakarta.annotation.Nonnull;
+// import jakarta.annotation.NotNull;
 import jakarta.persistence.*;
 
 @Entity
@@ -16,22 +18,22 @@ public class FeedBack {
 	@Column(name = "id")
 	private Long id;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "subject")
 	private String subject;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "remark")
 	private String remark;
 	
 	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	@Nonnull
+	@NotNull
 	private User user;
 	
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "created_date")
 	private Date createdDate;
 	

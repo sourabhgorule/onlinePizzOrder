@@ -2,7 +2,9 @@ package com.po.model;
 
 import java.util.Date;
 
-import jakarta.annotation.Nonnull;
+import javax.validation.constraints.NotNull;
+
+// import jakarta.annotation.NotNull;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,23 +35,23 @@ public class Pizzatype {
 	@Column(name = "id")
 	private Long id;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "name")
 	private String name;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "price")
 	private Double price;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "size")
 	private Integer size;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "info")
 	private String info;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "created_date")
 	private Date createdDate;
 	

@@ -3,7 +3,9 @@ package com.po.model;
 import java.io.Serializable;
 import java.util.Date;
 
-import jakarta.annotation.Nonnull;
+import javax.validation.constraints.NotNull;
+
+// import jakarta.annotation.NotNull;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -47,44 +49,44 @@ public class User implements Serializable {
 	@Column(name = "id")
 	private Long id;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "full_name")
 	private String fullName;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "username")
 	private String username;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "password")
 	private String password;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "email")
 	private String email;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "address")
 	private String address;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "is_customer")
 	private String isCustomer;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "is_admin")
 	private String isAdmin;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "mob_number")
 	private String mobNumber;
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "active")
 	private Integer active;
 	
 	
-	@Nonnull
+	@NotNull
 	@Column(name = "created_date")
 	private Date createdDate;
 	
