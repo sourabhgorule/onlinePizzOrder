@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>log in page3</title>
-    <link rel="stylesheet" href="styles/loginPage.css">
-    
-    <style type="text/css">
-    
-    @charset "UTF-8";
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +8,7 @@
 body {
     height: 100vh;
     width: 100%;   
-  background:
-  url('/images/background.jpg');
+  background-image:url('/images/background.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -101,25 +89,3 @@ body {
         padding: 50px;
     }
 }
-    
-    
-    </style>
-</head>
-<body>
-    <form th:action="@{/checkCred}" method="post" th:object="${user}" id="loginform"></form>
-    <div class="container">
-        <h1>Login Page</h1>
-        <div class="form-group">
-            <label>Email</label> <br>
-            <input type="email"  placeholder="Enter Email...."  name="username">
-        </div>
-        <div class="form-group">
-            <label>Password</label> <br>
-            <input type="password" placeholder="Enter Password..." name="password">
-        </div>
-        <a href="#">Forgot Password</a> <br>
-        <button type="submit">Log In</button>
-    </div>
-    </form>
-</body>
-</html>

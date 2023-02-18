@@ -1,12 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>web page</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="../static/css/index.css"
+	th:href="@{css/index.css}">
 </head>
+
 <body>
-    <h1>logged in</h1>
+    <header>
+        
+         <div class="nav_container ">
+
+            <div class="left flex text-center">
+                <a href="#">
+                    <h1 class="text-center white">Yummy<span>.</span></h1>
+                </a>
+
+                <nav class="nav-bar text-center white">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Event</a>
+                    <a href="#">Chef</a>
+                    <a href="#">Gallery</a>
+                </nav>
+                <div class="boot-a-table white">
+                    <a href="../log in page3/loginpage3.html" th:href="@{'/book/edit/' + ${b.id}}">Log In Here !!!</a> 
+                </div>
+            </div>
+        </div>
+        <!-- nav bar -->
+
+        <!-- slider starts from here -->
+        <section>
+            <div class="">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img width="100%" height="780" src="/images/food-pizza-wallpaper-preview.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="100%" height="780" src="/images/pizza-food-vegetables-fruit-wallpaper-preview.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img width="100%" height="780" src="/images/food-pizza-wallpaper-preview.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item ">
+                            <img width="100%" height="780" src="/images/pizza5.jpg" alt="fourth slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- slider ends here -->
+
+    <!-- about us section starts from here -->
+    <section>
+        <div>
+            <h2 class="text-center text-capitalize pt-2 white" >about</h2>
+            <hr class="w-25 mx-auto pt-4">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <img height="" width="500px" src="/images/menu-item-3.png" alt="sample picture" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h2 class="text-center text-capitalize white our_speciality">our speciality</h2>
+                    <hr class="mx-auto w-25">
+                    <p class="text-center white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto
+                        aut. Esse magnam cum ut laboriosam quos dicta architecto ratione corrupti totam culpa
+                        consequatur sequi voluptatibus veniam, debitis, consectetur doloremque!
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="text-capitalize btn-outline-success large btn-lg white">click here for the more
+                            information</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us section ends here -->
+
+    <!-- services section starts from here -->
+    <section>
+        <div class="container">
+            <h2 class="text-center text-capitalize pt-4 white" id="ourservices">our Chef's </h2>
+            <hr class="w-25 pt-4">
+
+            <div class="row text-center">
+
+                <div class="col-lg-4 col-md-4 col-xl-4 col-sm-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/chefs-1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="-lg-4 col-md-4 col-xl-4 col-sm-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/chefs-2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xl-4 col-sm-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/images/chefs-3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- services section ends here -->
+
+    <!-- contact us section starts from here -->
+
+    <section class="bg-primary">
+        <article class="py-5 text-center">
+            <div class="text-white">
+                <h3 class="text-capitalize text-monospace "> for best services contact us now</h3>
+                <p class="display-4">+91 7218969691</p>
+                <p class="text-center text-capitalize"> for excellent quality services call us </p>
+                <button type="submit" class="btn btn-warning text-capitalize">call now</button>
+            </div>
+        </article>
+    </section>
+    <!-- contact us section ends here -->
+
+    <!-- gallery section starts from here -->
+    <section>
+        <div class="container">
+            <h2 class="text-center text-capitalize pt-4 white">food gallery</h2>
+            <hr class="w-25 mx-auto pt-4">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-2 col-12 mb-4 box-shadow">
+                    <img src="/images/menu-item-1.png" alt="pic" class="img-fluid">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4 box-shadow">
+                    <img src="/images/menu-item-2.png" alt="pic" class="img-fluid">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4 box-shadow">
+                    <img src="/images/menu-item-3.png" alt="pic" class="img-fluid">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4 box-shadow">
+                    <img src="/images/menu-item-4.png" alt="pic" class="img-fluid">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4 box-shadow">
+                    <img src="/images/menu-item-5.png" alt="pic" class="img-fluid">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4 box-shadow">
+                    <img src="/images/menu-item-6.png" alt="pic" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery section ends here -->
+
+    <!-- join us section starts from here -->
+    <section class="bg-primary">
+        <article class="py-5 text-center">
+            <div class="text-white">
+                <h3 class="text-capitalize text-monospace display-4"> want to join us </h3>
+                <p class="text-center text-capitalize">be a part of amit mane family</p>
+                <button type="button" class="btn btn-warning text-capitalize" data-toggle="modal"
+                    data-target="mymodel">join now</button>
+            </div>
+
+            <div class="modal" tabindex="-1" role="dialog" id="mymodel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <!-- join us section ends here -->
+
+    <!-- comtact us filling form -->
+    <section>
+        <div class="container">
+            <h2 class="text-center text-capitalize pt-4 white">contact us</h2>
+            <hr class="w-25">
+
+            <div class="w-50 mx-auto pb-4">
+                <form>
+                    <div class="form-group">
+                        <label for="fname" class="">First Name</label>
+                        <input type="text" name="fname" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname" class="">Last Name</label>
+                        <input type="text" name="fname" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="Contact">Contact</label>
+                        <input type="text" class="form-control" placeholder="Contact">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact us filling form ends here -->
+
 </body>
+
 </html>
