@@ -93,6 +93,151 @@ public class User implements Serializable {
 	@Column(name = "last_modified_date")
 	private Date lastModifiedDate;
 
+	public Long getId() {
+		return id;
+	}
+
+
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+
+	public String getFullName() {
+		return fullName;
+	}
+
+
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+
+
+	public String getUsername() {
+		return username;
+	}
+
+
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+
+
+	public String getPassword() {
+		return password;
+	}
+
+
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+
+	public String getIsCustomer() {
+		return isCustomer;
+	}
+
+
+
+	public void setIsCustomer(String isCustomer) {
+		this.isCustomer = isCustomer;
+	}
+
+
+
+	public String getIsAdmin() {
+		return isAdmin;
+	}
+
+
+
+	public void setIsAdmin(String isAdmin) {
+		this.isAdmin = isAdmin;
+	}
+
+
+
+	public String getMobNumber() {
+		return mobNumber;
+	}
+
+
+
+	public void setMobNumber(String mobNumber) {
+		this.mobNumber = mobNumber;
+	}
+
+
+
+	public Integer getActive() {
+		return active;
+	}
+
+
+
+	public void setActive(Integer active) {
+		this.active = active;
+	}
+
+
+
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+
+
+
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+
+
+
+	public Date getLastModifiedDate() {
+		return lastModifiedDate;
+	}
+
+
+
+	public void setLastModifiedDate(Date lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
+	}
+	
+	
+	
+
 	
 }
 
